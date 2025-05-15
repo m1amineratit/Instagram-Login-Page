@@ -25,8 +25,15 @@ SECRET_KEY = 'django-insecure-#o#-*$74kqmtzvu3=%dc^+m^4f50z1a9cy0sts09dznc(sgv0w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'instugram.up.railway.app']
+
+
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://instugram.up.railway.app']
+
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+SITE_ID =1
 
 # Application definition
 
